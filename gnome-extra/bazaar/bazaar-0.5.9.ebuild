@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/kolunmi/bazaar"
 SRC_URI="https://github.com/kolunmi/${PN}/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="GPL-3"
-SLOT="1"
+SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
 IUSE="+flatpak"
