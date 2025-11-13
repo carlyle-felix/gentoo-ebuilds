@@ -26,7 +26,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="
-	!>=media-libs/glycin-loaders-2:0
+	media-libs/glycin-loaders:2
 	>=dev-libs/glib-2.68.0:2
 	>=sys-libs/libseccomp-2.5.0
 	media-libs/fontconfig
