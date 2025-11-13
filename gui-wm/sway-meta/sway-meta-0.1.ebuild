@@ -28,6 +28,7 @@ RDEPEND="
 	sys-power/power-profiles-daemon
 	sys-process/htop[lm-sensors]
 	x11-libs/libnotify
+	x11-misc/xdg-user-dirs-gtk
 	x11-terms/kitty
 	x11-themes/catppuccin-cursors
 	x11-themes/papirus-icon-theme
