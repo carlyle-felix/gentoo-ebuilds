@@ -14,9 +14,11 @@ RDEPEND="
 	app-misc/brightnessctl
 	gui-apps/grim
 	gui-apps/mako
+	gui-apps/slurp
 	gui-apps/swayidle
 	gui-apps/swaylock
 	gui-apps/waybar[mpris,pipewire,tray,wifi]
+	gui-apps/wl-clipboard
 	gui-apps/wofi
 	gui-libs/xdg-desktop-portal-wlr
 	gui-wm/sway[-swaybar,wallpapers]
