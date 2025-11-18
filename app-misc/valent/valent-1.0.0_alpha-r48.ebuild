@@ -15,6 +15,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
+IUSE="pulseaudio"
+
 RDEPEND="
     >=dev-libs/glib-2.80.0
     >=gui-libs/gtk-4.15.2
@@ -44,6 +46,9 @@ src_prepare() {
 }
 
 src_configure() {
+	local emesonargs=(
+	$(meson_use pulseaudio plugin_pulseaudio)
+)
 	meson_src_configure
 }
 
