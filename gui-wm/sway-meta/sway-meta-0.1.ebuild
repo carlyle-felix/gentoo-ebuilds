@@ -17,7 +17,7 @@ RDEPEND="
 	gui-apps/slurp
 	gui-apps/swayidle
 	gui-apps/swaylock
-	gui-apps/waybar[mpris,pipewire,tray,wifi]
+	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
 	gui-apps/wofi
 	gui-libs/xdg-desktop-portal-wlr
