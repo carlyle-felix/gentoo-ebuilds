@@ -14,18 +14,22 @@ RDEPEND="
 	app-misc/brightnessctl
 	gui-apps/grim
 	gui-apps/hypridle
-	gui-apps/hyprlauncher
 	gui-apps/hyprlock
 	gui-apps/hyprpaper
+	gui-apps/hyprpicker
+	gui-apps/hyprshot
 	gui-apps/mako
 	gui-apps/slurp
-	gui-apps/waybar[mpris,pipewire,tray,wifi]
+	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
+	gui-apps/wofi
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	networkmanager? ( net-misc/networkmanager )
 	media-fonts/fontawesome
 	media-fonts/nerdfonts
+	media-fonts/noto
+	media-fonts/noto-emoji
 	sys-apps/xdg-desktop-portal-gtk
 	sys-auth/hyprpolkitagent
 	sys-auth/rtkit
