@@ -12,14 +12,12 @@ KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="
 	app-misc/brightnessctl
-	gui-apps/grim
 	gui-apps/hypridle
 	gui-apps/hyprlock
 	gui-apps/hyprpaper
 	gui-apps/hyprpicker
 	gui-apps/hyprshot
 	gui-apps/mako
-	gui-apps/slurp
 	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
 	gui-apps/wofi
@@ -35,7 +33,6 @@ RDEPEND="
 	sys-auth/rtkit
 	sys-power/power-profiles-daemon
 	sys-process/htop[lm-sensors]
-	x11-libs/libnotify
 	x11-misc/xdg-user-dirs-gtk
 	x11-terms/kitty
 	x11-themes/catppuccin-cursors
