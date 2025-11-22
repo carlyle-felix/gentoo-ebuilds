@@ -7,15 +7,15 @@ inherit gnome2-utils meson xdg vala
 
 DESCRIPTION="Connect, Control and Sync Devices"
 HOMEPAGE="https://github.com/andyholmes/valent"
-SRC_URI="https://github.com/andyholmes/${PN}/releases/download/v1.0.0.alpha.48/${PN}-1.0.0.alpha.48.tar.xz"
+SRC_URI="https://github.com/andyholmes/${PN}/releases/download/v1.0.0.alpha.49/${PN}-1.0.0.alpha.49.tar.xz"
 
-S=${WORKDIR}/${PN}-1.0.0.alpha.48
+S=${WORKDIR}/${PN}-1.0.0.alpha.49
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
-IUSE="pulseaudio"
+IUSE="+pipewire pulseaudio +introspection vala bluetooth"
 
 RDEPEND="
     >=dev-libs/glib-2.80.0
@@ -23,13 +23,18 @@ RDEPEND="
     >=media-libs/glycin-2.0.1
     >=net-libs/gnutls-3.1.3
     >=dev-libs/json-glib-1.6.0
-    >=dev-libs/libpeas-2.0.0[vala]
-    >=gnome-extra/evolution-data-server-3.48[vala]
+    >=dev-libs/libpeas-2.0.0[vala?]
+    >=gnome-extra/evolution-data-server-3.48[vala?]
     >=gui-libs/libadwaita-1.6
     >=dev-libs/libportal-0.7.1
-    >=app-misc/tinysparql-3.0[vala]
+    >=app-misc/tinysparql-3.0[vala?]
+    bluetooth? ( net-wireless/bluez )
+    introspection? ( dev-libs/gobject-introspection )
+    pipewire? ( media-video/pipewire )
+    pulseaudio? ( media-libs/libpulse )
     app-text/libebook[tools]
     dev-libs/libphonenumber
+    vala? ( $(vala_depend) )
 "
 
 DEPEND="${RDEPEND}
@@ -47,7 +52,11 @@ src_prepare() {
 
 src_configure() {
 	local emesonargs=(
-	$(meson_use pulseaudio plugin_pulseaudio)
+    $(meson_use introspection introspection)
+    $(meson_use vala vapi)
+    $(meson_use bluetooth plugin_bluez)
+    $(meson_use pipewire plugin_pipewire)
+    $(meson_use pulseaudio plugin_pulseaudio)
 )
 	meson_src_configure
 }
