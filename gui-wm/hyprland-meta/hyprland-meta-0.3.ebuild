@@ -18,6 +18,7 @@ RDEPEND="
 	gui-apps/hyprpicker
 	gui-apps/hyprshot
 	gui-apps/mako
+	gui-apps/qt6ct
 	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
 	gui-apps/wofi
