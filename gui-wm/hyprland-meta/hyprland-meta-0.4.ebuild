@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DESCRIPTION="Swaywm config metapackage"
+DESCRIPTION="Hyprland metapackage"
 HOMEPAGE="https://github.com/carlyle-felix"
 LICENSE="metapackage"
 SLOT="0"
@@ -25,7 +25,6 @@ RDEPEND="
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	networkmanager? ( net-misc/networkmanager )
-	media-fonts/fontawesome
 	media-fonts/nerdfonts
 	media-fonts/noto
 	media-fonts/noto-emoji
