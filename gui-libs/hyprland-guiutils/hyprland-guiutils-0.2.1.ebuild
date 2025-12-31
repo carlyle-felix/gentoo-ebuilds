@@ -7,8 +7,7 @@ inherit cmake
 
 DESCRIPTION="Hyprland GUI utilities (successor to hyprland-qtutils)"
 HOMEPAGE="https://github.com/hyprwm/hyprland-guiutils"
-SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}.tar.gz"
-
+SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="BSD"
 
 SLOT="0"
