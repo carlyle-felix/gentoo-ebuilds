@@ -13,6 +13,7 @@ KEYWORDS="~amd64 ~arm64"
 RDEPEND="
 	app-misc/brightnessctl
 	gui-apps/hypridle
+	gui-apps/hyprlauncher
 	gui-apps/hyprlock
 	gui-apps/hyprpaper
 	gui-apps/hyprpicker
@@ -21,7 +22,6 @@ RDEPEND="
 	gui-apps/qt6ct
 	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
-	gui-apps/wofi
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	networkmanager? ( net-misc/networkmanager )
@@ -35,6 +35,4 @@ RDEPEND="
 	sys-process/htop[lm-sensors]
 	x11-misc/xdg-user-dirs-gtk
 	x11-terms/kitty
-	x11-themes/catppuccin-cursors
-	x11-themes/papirus-icon-theme
 "
