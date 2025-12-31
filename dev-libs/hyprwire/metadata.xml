@@ -10,8 +10,8 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<upstream>
-		<changelog>https://github.com/hyprwm/hyprland-guiutils/releases</changelog>
-		<bugs-to>https://github.com/hyprwm/hyprland-guiutils/issues</bugs-to>
-		<remote-id type="github">hyprwm/hyprland-guiutils</remote-id>
+		<changelog>https://github.com/hyprwm/hyprwire/releases</changelog>
+		<bugs-to>https://github.com/hyprwm/hyprwire/issues</bugs-to>
+		<remote-id type="github">hyprwm/hyprwire</remote-id>
 	</upstream>
 </pkgmetadata>
