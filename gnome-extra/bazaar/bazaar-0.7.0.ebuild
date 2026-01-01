@@ -29,6 +29,8 @@ RDEPEND="
     >=net-libs/libsoup-3.6.5:3.0
     >=dev-libs/json-glib-1.10.0
     >=dev-libs/md4c-0.5.1
+    >=net-libs/webkit-gtk-2.50.2:6
+    app-crypt/libsecret
 "
 
 DEPEND="${RDEPEND}
