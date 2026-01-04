@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 RDEPEND="
-	>=gui-libs/hyprutils-0.10.2
+	>=gui-libs/hyprutils-0.9.0
 	dev-libs/libffi
 "
 
