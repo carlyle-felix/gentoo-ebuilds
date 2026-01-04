@@ -18,7 +18,7 @@ RDEPEND="
 	dev-libs/wayland
 	dev-libs/wayland-protocols
 	gui-libs/egl-wayland
-	>=gui-libs/hyprutils-0.9.0
+	>=gui-libs/hyprutils-0.11.0
 	>=dev-libs/hyprlang-0.6.0
 	x11-libs/pixman
 	x11-libs/libdrm
@@ -27,7 +27,7 @@ RDEPEND="
 	x11-libs/cairo
 	dev-libs/iniparser
 	>=dev-libs/hyprgraphics-0.3.0
-	>=gui-libs/aquamarine-0.9.5
+	>=gui-libs/aquamarine-0.10.0
 "
 
 DEPEND="${RDEPEND}"
