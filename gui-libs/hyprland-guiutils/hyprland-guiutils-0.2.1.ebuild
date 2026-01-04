@@ -15,9 +15,10 @@ KEYWORDS="amd64"
 
 RDEPEND="
 	>=dev-libs/hyprlang-0.6.0
-	>=gui-libs/hyprutils-0.2.4
-	>=gui-libs/hyprtoolkit-0.2.2
+	>=gui-libs/hyprutils-0.10.2
+	>=gui-libs/hyprtoolkit-0.4.0
 	x11-libs/pixman
+	x11-libs/libxkbcommon
 	x11-libs/libdrm
 "
 
