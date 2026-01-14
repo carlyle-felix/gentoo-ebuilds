@@ -36,7 +36,6 @@ COMMON_DEPEND="
 	cloudproviders? ( net-libs/libcloudproviders )
 	colord? ( >=x11-misc/colord-0.1.9:0= )
 	cups? ( >=net-print/cups-2.0 )
-	examples? ( gnome-base/librsvg:2 )
 	gstreamer? (
 		>=media-libs/gstreamer-1.24.0:1.0
 		>=media-libs/gst-plugins-bad-1.24.0:1.0
