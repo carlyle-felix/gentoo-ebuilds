@@ -7,7 +7,6 @@ EAPI=8
 
 RUST_MIN_VER="1.83"
 
-
 CRATES="
 	adler2@2.0.1
 	aes@0.8.4
