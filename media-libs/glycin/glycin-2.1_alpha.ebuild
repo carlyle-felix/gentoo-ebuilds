@@ -6,14 +6,15 @@ EAPI=8
 CRATES="
 "
 
-RUST_MIN_VER=1.85.0
+RUST_MIN_VER=1.89.0
 
 inherit cargo meson vala
 
 DESCRIPTION="The Rust image library"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/glycin/"
-SRC_URI+="https://gitlab.gnome.org/GNOME/glycin/-/archive/${PV}/glycin-${PV}.tar.bz2
-		https://github.com/gentoo-crate-dist/glycin/releases/download/${PV}/glycin-${PV}-crates.tar.xz"
+SRC_URI+="https://gitlab.gnome.org/GNOME/${PN}/-/archive/2.1.alpha/glycin-2.1.alpha.tar.bz2
+		https://github.com/gentoo-crate-dist/${PN}/releases/download/2.1.alpha/glycin-2.1.alpha-crates.tar.xz"
+S="${WORKDIR}/${PN}-2.1.alpha"
 
 LICENSE="MPL-2.0"
 # Dependent crate licenses
