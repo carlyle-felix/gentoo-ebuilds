@@ -25,13 +25,14 @@ DEPEND="
 	>=gnome-base/gnome-desktop-43:4=
 	>=gnome-base/gsettings-desktop-schemas-42
 	>=gui-libs/gtk-4.17.5:4[introspection?]
-	>=gui-libs/libadwaita-1.6_beta:1
+	>=gui-libs/libadwaita-1.8_alpha
 	>=dev-libs/libportal-0.7:=[gtk]
 	>=x11-libs/pango-1.28.3
 	selinux? ( >=sys-libs/libselinux-2.0 )
 	>=app-misc/tinysparql-3.2:3
 	cloudproviders? ( >=net-libs/libcloudproviders-0.3.1 )
 	introspection? ( >=dev-libs/gobject-introspection-1.54:= )
+	media-libs/glycin
 "
 # Uses org.freedesktop.Tracker.Miner.Files gsettings schema from localsearch
 RDEPEND="${DEPEND}
