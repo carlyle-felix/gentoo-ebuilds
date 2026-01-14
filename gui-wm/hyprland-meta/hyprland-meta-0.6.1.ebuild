@@ -21,6 +21,7 @@ RDEPEND="
 	gui-apps/mako
 	gui-apps/waybar[mpris,pipewire,tray,wifi,network,backlight]
 	gui-apps/wl-clipboard
+	gui-apps/hyprshutdown
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	networkmanager? ( net-misc/networkmanager )
