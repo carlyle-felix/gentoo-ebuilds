@@ -20,9 +20,7 @@ IUSE="X +guiutils systemd"
 # hyprpm (hyprland plugin manager) requires the dependencies at runtime
 # so that it can clone, compile and install plugins.
 HYPRPM_RDEPEND="
-	app-alternatives/ninja
 	>=dev-build/cmake-3.30
-	dev-build/meson
 	dev-vcs/git
 	virtual/pkgconfig
 "
