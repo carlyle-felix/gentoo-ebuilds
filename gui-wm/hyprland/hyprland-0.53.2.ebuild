@@ -26,7 +26,7 @@ HYPRPM_RDEPEND="
 "
 RDEPEND="
 	${HYPRPM_RDEPEND}
-	>=dev-cpp/glaze-6.1
+	=dev-cpp/glaze-6.1.0
 	dev-cpp/tomlplusplus
 	dev-cpp/muParser
 	dev-libs/glib:2
