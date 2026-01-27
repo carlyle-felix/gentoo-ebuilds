@@ -23,10 +23,10 @@ HYPRPM_RDEPEND="
 	>=dev-build/cmake-3.30
 	dev-vcs/git
 	virtual/pkgconfig
+	=dev-cpp/glaze-7.0.2
 "
 RDEPEND="
 	${HYPRPM_RDEPEND}
-	=dev-cpp/glaze-6.1.0
 	dev-cpp/tomlplusplus
 	dev-cpp/muParser
 	dev-libs/glib:2
@@ -69,6 +69,10 @@ BDEPEND="
 	>=dev-util/hyprwayland-scanner-0.4.5
 	virtual/pkgconfig
 "
+
+PATCHES=(
+	"${FILESDIR}"/glaze_version
+)
 
 pkg_setup() {
 	[[ ${MERGE_TYPE} == binary ]] && return
