@@ -19,7 +19,7 @@ RDEPEND="
 	x11-libs/pixman
 	x11-libs/libdrm
 	>=gui-libs/hyprutils-0.10.2
-	dev-libs/hyprwire
+	gui-libs/hyprwire
 	dev-libs/icu
 	>=dev-libs/hyprlang-0.6.0
 	sci-libs/libqalculate
