@@ -31,6 +31,8 @@ RDEPEND="
     >=dev-libs/md4c-0.5.1
     >=net-libs/webkit-gtk-2.50.2:6
     app-crypt/libsecret
+    >=net-libs/libproxy-0.5
+    >=gnome-extra/malcontent-0.12.0
 "
 
 DEPEND="${RDEPEND}
