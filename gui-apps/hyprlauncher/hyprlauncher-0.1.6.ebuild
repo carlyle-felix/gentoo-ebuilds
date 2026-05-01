@@ -20,9 +20,10 @@ RDEPEND="
 	x11-libs/libdrm
 	>=gui-libs/hyprutils-0.10.2
 	gui-libs/hyprwire
-	dev-libs/icu
+	dev-libs/iculibadwaita-1.8.3
 	>=dev-libs/hyprlang-0.6.0
 	sci-libs/libqalculate
+	>=dev-libs/wayland-protocols-1.48
 "
 
 DEPEND="${RDEPEND}"
