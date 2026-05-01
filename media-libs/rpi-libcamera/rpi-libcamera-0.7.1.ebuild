@@ -8,7 +8,7 @@ inherit meson
 DESCRIPTION="A complex camera support library for Linux, Android, and ChromeOS"
 HOMEPAGE="https://libcamera.org/"
 
-MYP="rpt20260205"
+MYP="rpt20260429"
 SRC_URI="https://github.com/raspberrypi/libcamera/archive/refs/tags/v${PV}+${MYP}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~arm64"
 
