@@ -24,6 +24,7 @@ RDEPEND="
 	dev-libs/appstream:=
 	dev-libs/fribidi
 	introspection? ( >=dev-libs/gobject-introspection-1.83.2:= )
+	dev-libs/ministream
 "
 DEPEND="${RDEPEND}
 	x11-base/xorg-proto
