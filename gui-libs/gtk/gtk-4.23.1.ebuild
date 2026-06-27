@@ -33,7 +33,7 @@ COMMON_DEPEND="
 	app-text/iso-codes
 	x11-misc/shared-mime-info
 
-	cloudproviders? ( net-libs/libcloudproviders )
+	cloudproviders? ( >=net-libs/libcloudproviders-0.3.1 )
 	colord? ( >=x11-misc/colord-0.1.9:0= )
 	cups? ( >=net-print/cups-2.0 )
 	gstreamer? (
@@ -47,8 +47,8 @@ COMMON_DEPEND="
 	introspection? ( >=dev-libs/gobject-introspection-1.76:= )
 	vulkan? ( >=media-libs/vulkan-loader-1.3:=[wayland?,X?] )
 	wayland? (
-		>=dev-libs/wayland-1.23.0
-		>=dev-libs/wayland-protocols-1.41
+		>=dev-libs/wayland-1.24.0
+		>=dev-libs/wayland-protocols-1.48
 		media-libs/mesa[wayland]
 		>=x11-libs/libxkbcommon-0.2
 	)
@@ -70,8 +70,8 @@ DEPEND="${COMMON_DEPEND}
 		x11-libs/libdrm
 		sys-kernel/linux-headers
 	)
-	sysprof? ( >=dev-util/sysprof-capture-3.40.1:4 )
-	vulkan? ( dev-util/vulkan-headers )
+	sysprof? ( >=dev-util/sysprof-capture-3.38.0:4 )
+	vulkan? ( >=dev-util/vulkan-headers-1.3 )
 	X? ( x11-base/xorg-proto )
 "
 RDEPEND="${COMMON_DEPEND}
