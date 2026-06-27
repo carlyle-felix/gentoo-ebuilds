@@ -34,6 +34,7 @@ RDEPEND="
     app-crypt/libsecret
     >=net-libs/libproxy-0.5
     >=gnome-extra/malcontent-0.12.0
+    dev-python/babel
 "
 
 DEPEND="${RDEPEND}
