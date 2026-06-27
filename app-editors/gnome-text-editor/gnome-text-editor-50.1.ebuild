@@ -20,7 +20,7 @@ DEPEND="
 	>=dev-libs/glib-2.80.0:2
 	>=gui-libs/gtk-4.17.3:4
 	>=gui-libs/gtksourceview-5.15.0:5
-	>=gui-libs/libadwaita-1.6.0:1
+	>=gui-libs/libadwaita-1.8_rc
 	app-text/editorconfig-core-c
 	x11-libs/cairo
 	>=app-text/libspelling-0.3.0
