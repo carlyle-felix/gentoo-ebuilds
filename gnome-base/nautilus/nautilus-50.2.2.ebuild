@@ -33,6 +33,7 @@ DEPEND="
 	cloudproviders? ( >=net-libs/libcloudproviders-0.3.1 )
 	introspection? ( >=dev-libs/gobject-introspection-1.54:= )
 	media-libs/glycin
+	net-libs/xdp-tools
 "
 # Uses org.freedesktop.Tracker.Miner.Files gsettings schema from localsearch
 RDEPEND="${DEPEND}
