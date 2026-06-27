@@ -6,7 +6,9 @@ inherit meson xdg
 
 DESCRIPTION="Parental control support for applications"
 HOMEPAGE="https://gitlab.freedesktop.org/pwithnall/malcontent"
-SRC_URI="https://gitlab.freedesktop.org/pwithnall/malcontent/-/archive/${PV}/${PN}-${PV}.tar.bz2"
+SRC_URI="https://gitlab.freedesktop.org/pwithnall/malcontent/-/archive/${PV}/${PN}-${PV}.tar.bz2
+	https://gitlab.gnome.org/GNOME/gvdb/-/archive/main/gvdb-main.tar.bz2
+	https://www.corpit.ru/mjt/tinycdb/tinycdb-0.81.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -25,8 +27,21 @@ RDEPEND="
 	sys-libs/pam
 	sys-apps/flatpak
 	dev-libs/libglib-testing
+	dev-libs/libgsystemservice
 " #Build complains about libglib-testing after enabling graphite in gcc? 
 DEPEND="${RDEPEND}"
+
+src_unpack() {
+	default
+
+	rm -rf "${S}/subprojects/gvdb" || die
+	mv "${WORKDIR}/gvdb-main" "${S}/subprojects/gvdb" || die
+
+	mv "${WORKDIR}/tinycdb-0.81" "${S}/subprojects/tinycdb-0.81" || die
+	if [[ -d "${S}/subprojects/packagefiles/tinycdb" ]]; then
+        cp -a "${S}/subprojects/packagefiles/tinycdb/"* "${S}/subprojects/tinycdb-0.81/" || die
+    fi
+}
 
 src_configure() {
 	local emesonargs=(
