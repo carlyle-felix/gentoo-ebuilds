@@ -3,6 +3,6 @@
 <pkgmetadata>
   <!-- maintainer-needed -->
   <upstream>
-    <bugs-to>https://github.com/hyprwm/hyprshutdown/issues</bugs-to>
+    <bugs-to>https://github.com/raspberrypi/libcamera/issues</bugs-to>
   </upstream>
 </pkgmetadata>
