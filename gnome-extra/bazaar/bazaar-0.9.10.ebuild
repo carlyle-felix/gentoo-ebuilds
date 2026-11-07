@@ -9,7 +9,7 @@ DESCRIPTION="Bazaar is a new app store for GNOME with a focus on
 discovering and installing applications and add-ons from Flatpak
 remotes, particularly Flathub."
 HOMEPAGE="https://github.com/kolunmi/bazaar"
-SRC_URI="https://github.com/kolunmi/${PN}/archive/refs/tags/v${PV}.tar.gz"
+SRC_URI="https://gitlab.gnome.org/World/bazaar/archive/v${V}/${P}-${V}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
