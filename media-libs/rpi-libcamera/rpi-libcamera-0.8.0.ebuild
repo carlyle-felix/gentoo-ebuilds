@@ -62,8 +62,8 @@ src_configure() {
       $(meson_feature qt6 qcam)
       $(meson_feature trace tracing)
       $(meson_feature v4l2)
-      -Dipas=rpi/vc4,rpi/pisp,simple
-      -Dpipelines=uvcvideo,ipu3,simple,rpi/vc4,rpi/pisp
+      -Dipas=rpi/vc4,rpi/pisp
+      -Dpipelines=uvcvideo,ipu3,rpi/vc4,rpi/pisp
    )
 
    meson_src_configure
